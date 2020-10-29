@@ -1,0 +1,15 @@
+{
+  "name": "escritorio-astro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch system/scss/default.scss:system/css/stylesheet.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "1.*"
+  }
+}
