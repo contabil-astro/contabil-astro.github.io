@@ -23,3 +23,7 @@ body {
 a {
     text-decoration: none;
 }
+//Default settings to <img>
+img {
+    aspect-ratio: attr(width) / attr(height);
+}

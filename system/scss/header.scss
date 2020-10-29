@@ -5,6 +5,7 @@ header {
     border-bottom: 1px solid var(--orange-2);
     height: 90px;
     > img {
+        margin: var(--space-5);
         height: 68px;
         width: auto;
     }
@@ -16,7 +17,9 @@ header {
         width: var(--space-50);
         justify-content: center;
         align-items: center;
-        margin-top: var(--space-10);
+        margin-top: var(--space-20);
+        margin-right: var(--space-20);
+        outline: none;
         img {
             height: var(--space-20);
             width: auto;
