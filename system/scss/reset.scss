@@ -16,14 +16,10 @@ body {
 	flex-direction: column;
 	background-color: var(--bg-color);
 	> main {
-		min-height: calc(100vh - 400px);
+		min-height: 100vh;
 	}
 }
 //Default settings to <a>
 a {
     text-decoration: none;
-}
-//Default settings to <img>
-img {
-    aspect-ratio: attr(width) / attr(height);
 }
