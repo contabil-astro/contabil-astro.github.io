@@ -4,9 +4,15 @@
 //Reset default values
 @import 'reset.scss';
 
+//Fonts variables
+@import 'fonts.scss';
+
 //Mixin Files
 @import 'mixin.scss';
 
 //Heander and Footer
 @import 'header.scss';
 @import 'footer.scss';
+
+//SCSS of pages
+@import 'index.scss';
