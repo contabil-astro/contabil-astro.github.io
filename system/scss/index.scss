@@ -1,5 +1,161 @@
 #index {
-    background-image: url("../../assets/webp/background-mb.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
+    section {
+        &#top {
+            background-image: url("../../assets/webp/background-mb.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            align-items: flex-end;
+            //min-height: calc(100vh - 40px);
+            min-height: 100vh;
+            > div {
+                background-color: rgba(255,255,255,0.8);
+                margin-bottom: calc(var(--space-20) * 2);
+                h1 {
+                    display: block;
+                    width: 100vw;
+                    font-size: calc(var(--space-20) + var(--space-10));
+                    color: var(--green-1);
+                    font-weight: 300;
+                    padding: var(--space-20);
+                    text-transform: uppercase;
+                    line-height: calc(var(--space-20) * 2);
+                    span {
+                        font-weight: bold;
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+        &#services {
+            flex-direction: column;
+            .wrap {
+                background-color: inherit;
+                flex-direction: row;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: var(--space-50);
+                img {
+                    height: calc(var(--space-20) * 2);
+                    width: auto;
+                    margin-right: var(--space-10);
+                }
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+            article {
+                flex-direction: column;
+                .services-box {
+                    flex-direction: column;
+                    max-width: 992px;
+                    background-color: var(--white-1);
+                    width: 100%;
+                    margin: var(--space-20) 0;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: var(--space-20);
+                    height: 450px;
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: var(--space-20);
+                        margin:0;
+                        text-align: center;
+                    }
+                    a {
+                        picture {
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                transition: 0.3s;
+                                &:hover {
+                                    transform: scale(1.1);
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+                        &.cta {
+                            @include call-to-action;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (min-width: 992px) {
+    #index {
+        section {
+            &#top {
+                min-height: calc(100vh - 40px);
+                position: relative;
+                > div {
+                    margin-bottom: 250px;
+                    width: 645px;
+                    h1 {
+                        font-size: calc(var(--space-20) + var(--space-10) + var(--space-5));
+                    }
+                }
+            }
+            &#services {
+                header {
+                    justify-content: center;
+                    margin-bottom: var(--space-50);
+                }
+                article {
+                    flex-direction: row;
+                    .services-box {
+                        margin: 10px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+//Settings for first background image responsives
+@media (min-width: 640px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-mbr.webp");
+            }
+        }
+    }
+}
+@media (min-width: 990px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-1280.webp");
+            }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-1920.webp");
+            }
+        }
+    }
+}
+@media (min-width: 2000px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-_4k.webp");
+            }
+        }
+    }
 }

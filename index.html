@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
         <img src="assets/svg/logo.svg" alt="Astro Escritório Fisco Contábil" />
         <button type="button" aria-label="Menu de Opções" id="menu-handler">
             <img src="assets/svg/menu-bars.svg" alt="Menu de Opções" />
@@ -27,7 +27,57 @@
     </header>
 
     <main id="index">
-        <h1>Você cuida do seu <span>negócio</span>. nós cuidamos da sua <span>empresa</span>.</h1>
+        <section id="top">
+            <div>
+                <h1>Você cuida do seu&nbsp;<span>negócio.</span><br>Nós cuidamos da sua&nbsp;<span>empresa.</span></h1>
+            </div>
+        </section>
+        
+        <section id="services">
+            <header>
+                <div class="wrap">
+                    <a href="servicos.html">
+                    <img src="assets/svg/services.svg" alt="Nossos serviços" />
+                    <h2>nossos serviços</h2>
+                    </a>
+                </div>
+            </header>
+            <article>
+                <div class="services-box">
+                    <a href="servicos.html">
+                    <picture>
+                        <source srcset="assets/webp/irpf.webp" type="image/webp" />
+                        <img src="assets/jpg/irpf.jpg" alt="Declaração de Imposto de Renda" />
+                    </picture>
+                    </a>
+                    <h3>declaração de irpf</h3>
+                    <p>Fazemos sua declaração de Imposto de Renda da Pessoa Física</p>
+                    <a class="cta" href="servicos.html">saiba mais</a>
+                </div>
+                <div class="services-box">
+                    <a href="servicos.html">
+                    <picture>
+                        <source srcset="assets/webp/cnpj.webp" type="image/webp" />
+                        <img src="assets/jpg/cnpj.jpg" alt="Abertura e fechamento de empresas" />
+                    </picture>
+                    </a>
+                    <h3>abra sua empresa</h3>
+                    <p>Abrimos sua empresa e gerenciamos seu CNPJ</p>
+                    <a class="cta" href="servicos.html">saiba mais</a>
+                </div>
+                <div class="services-box">
+                    <a href="servicos.html" cla>
+                    <picture>
+                        <source srcset="assets/webp/rh.webp" type="image/webp" />
+                        <img src="assets/jpg/rh.jpg" alt="Recursos humanos" />
+                    </picture>
+                    </a>
+                    <h3>recursos humanos</h3>
+                    <p>Cuidamos de sua folha de pagamentos, documentos e impostos</p>
+                    <a class="cta" href="servicos.html">saiba mais</a>
+                </div>
+            </article>
+        </section>
     </main>
 
     <footer>

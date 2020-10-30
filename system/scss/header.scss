@@ -1,3 +1,5 @@
 header {
-    @include header;
+    &#header {
+        @include header;
+    }
 }
