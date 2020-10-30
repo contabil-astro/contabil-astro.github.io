@@ -1,0 +1,25 @@
+//All documents
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+//Set those tags to display flex default
+body, header, footer, div, section, form, nav, ul, li, a, img, button {
+	display: flex;
+}
+//Default settings to <body>
+body {
+    margin: 0;
+	flex-direction: column;
+	background-color: var(--bg-color);
+	> main {
+		min-height: 100vh;
+	}
+}
+//Default settings to <a>
+a {
+    text-decoration: none;
+}
