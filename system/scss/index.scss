@@ -1,15 +1,16 @@
 #index {
     section {
-        .wrap {
-            background-color: inherit;
-            flex-direction: row;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            a {
+        margin: var(--space-10) 0;
+        background-color: var(--white);
+        header {
+            .wrap {
+                background-color: inherit;
+                flex-direction: row;
+                display: flex;
                 justify-content: center;
-                margin: var(--space-50);
+                align-items: center;
+                width: 100%;
+                margin: var(--space-50) 0;
                 img {
                     height: calc(var(--space-20) * 2);
                     width: auto;
@@ -22,13 +23,14 @@
                 }
             }
         }
+        
         &#top {
             background-image: url("../../assets/webp/background-mb.webp");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: left;
             align-items: flex-end;
-            //min-height: calc(100vh - 40px);
+            margin-bottom: 0;
             min-height: 100vh;
             > div {
                 background-color: rgba(255,255,255,0.8);
@@ -50,6 +52,7 @@
             }
         }
         &#services {
+            margin-bottom: 0;
             flex-direction: column;
             article {
                 flex-direction: column;
@@ -79,6 +82,8 @@
                             img {
                                 width: 100%;
                                 transition: 0.3s;
+                                width: 100%;
+                                height: 100%;
                                 &:hover {
                                     transform: scale(1.1);
                                     opacity: 0.9;
@@ -86,7 +91,7 @@
                             }
                         }
                         &.cta {
-                            @include call-to-action;
+                            @include call-to-action(var(--red-1), var(--white));
                         }
                     }
                     &:first-child {
@@ -98,6 +103,7 @@
         }
         &#consulting {
             flex-direction: column;
+            margin: 0;
             article {
                 flex-direction: column;
                 picture {
@@ -114,10 +120,8 @@
                         font-size: var(--space-20);
                     }
                     a {
-                        @include call-to-action;
-                        background-color: var(--yellow-1);
+                        @include call-to-action(var(--yellow-1), var(--blue-1));
                         border: none;
-                        color: var(--blue-1);
                         font-weight: bold;
                     }
                 }
@@ -144,10 +148,82 @@
                         height: var(--space-50);
                         width: auto;
                     }
-                    h4 {
+                    h2 {
                         color: var(--white);
-                        font-size: var(--space-30);
+                        font-size: calc(var(--space-20) + var(--space-5));
                         text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        &#about {
+            margin-top: var(--space-50);
+            background-image: url('../../assets/webp/astro-mb.webp');
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            header, article, footer {
+                background-color: var(--white);
+                flex-direction: column;
+                padding: var(--space-20);
+                align-items: center;
+            }
+            header {
+                margin-top: 800px;
+                img {
+                    height: 130px;
+                    width: auto;
+                    justify-content: center;
+
+                }
+            }
+            article {
+                h2 {
+                    font-weight: bold;
+                    font-size: var(--space-30);
+                }
+                p {
+                    font-size: var(--space-20);
+                }
+            }
+            footer {
+                a {
+                    @include call-to-action(var(--yellow-1), var(--blue-1));
+                    border: none;
+                    font-weight: bold;
+                }
+            }
+        }
+        &#map {
+            flex-direction: column;
+            margin-bottom: var(--space-50);
+            header {
+                padding: var(--space-20);
+            }
+            .map {
+                height: 100vh;
+                background-image: url('../../assets/webp/mapa.webp');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                a {
+                    background-color: rgba(0,0,0,.5);
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--white);
+                    font-size: var(--space-20);
+                    display: none;
+                }
+                &:hover {
+                    a {
+                        display: flex;
                     }
                 }
             }
@@ -161,6 +237,7 @@
             &#top {
                 min-height: calc(100vh - 40px);
                 position: relative;
+                margin: 0;
                 > div {
                     margin-bottom: 250px;
                     width: 645px;
@@ -226,7 +303,7 @@
                         width: 100%;
                         justify-content: space-between;
                         height: 250px;
-                        h4 {
+                        h2 {
                             text-align: center;
                         }
                     }
@@ -234,6 +311,9 @@
                         background-color: var(--dark-2);
                     }
                 }
+            }
+            &#about {
+                background-image: url('../../assets/webp/astro.webp');
             }
         }
     }

@@ -7,10 +7,11 @@
     position: fixed;
     z-index: 2;
     width: 100%;
-    > img {
-        margin: var(--space-5);
-        height: 68px;
-        width: auto;
+    > a {
+        img {
+            margin: var(--space-10);
+            height: 70px;
+        }
     }
     button {
         &#menu-handler {
@@ -150,6 +151,7 @@
             margin: var(--space-20);
             p, h2 {
                 margin: 0;
+                color: var(--white);
             }
             a {
                 color: var(--white);
@@ -169,6 +171,7 @@
                 li {
                     display: list-item;
                     list-style: disc;
+                    margin: var(--space-20) 0;
                 }
             }
         }
@@ -203,20 +206,20 @@
         }
     }
 }
-@mixin call-to-action {
+@mixin call-to-action($background, $color) {
     width: 220px;
     height: 50px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: var(--red-1);
+    background-color: $background;
     border-radius: calc(var(--space-20) + var(--space-5));
     border: 1px solid var(--red-2);
     justify-content: center;
     align-items: center;
-    color: var(--white);
+    color: $color;
     font-size: 25px;
     transition: 0.3s;
     &:hover {
-        background-color: var(--red-3);
+        background-color: var(--red-3); 
     }
 }
