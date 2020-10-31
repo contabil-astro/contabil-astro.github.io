@@ -1,0 +1,357 @@
+#index {
+    section {
+        margin: var(--space-10) 0;
+        background-color: var(--white);
+        header {
+            .wrap {
+                background-color: inherit;
+                flex-direction: row;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: var(--space-50) 0;
+                img {
+                    height: calc(var(--space-20) * 2);
+                    width: auto;
+                    margin-right: var(--space-10);
+                }
+                h2 {
+                    text-transform: uppercase;
+                    font-size: calc(var(--space-50) - var(--space-10));
+                    font-weight: bold;
+                }
+            }
+        }
+        
+        &#top {
+            background-image: url("../../assets/webp/background-mb.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            align-items: flex-end;
+            margin-bottom: 0;
+            min-height: 100vh;
+            > div {
+                background-color: rgba(255,255,255,0.8);
+                margin-bottom: calc(var(--space-20) * 2);
+                h1 {
+                    display: block;
+                    width: 100vw;
+                    font-size: calc(var(--space-20) + var(--space-10));
+                    color: var(--green-1);
+                    font-weight: 300;
+                    padding: var(--space-20);
+                    text-transform: uppercase;
+                    line-height: calc(var(--space-20) * 2);
+                    span {
+                        font-weight: bold;
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+        &#services {
+            margin-bottom: 0;
+            flex-direction: column;
+            article {
+                flex-direction: column;
+                .services-box {
+                    flex-direction: column;
+                    max-width: 992px;
+                    background-color: var(--white-1);
+                    width: 100%;
+                    margin: var(--space-20) 0;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: var(--space-20);
+                    height: 450px;
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: var(--space-20);
+                        margin:0;
+                        text-align: center;
+                    }
+                    a {
+                        picture {
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                transition: 0.3s;
+                                width: 100%;
+                                height: 100%;
+                                &:hover {
+                                    transform: scale(1.1);
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+                        &.cta {
+                            @include call-to-action(var(--red-1), var(--white));
+                        }
+                    }
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+                
+            }
+        }
+        &#consulting {
+            flex-direction: column;
+            margin: 0;
+            article {
+                flex-direction: column;
+                picture {
+                    img {
+                        width: 100%;
+                    }
+                }
+                div {
+                    flex-direction: column;
+                    padding: var(--space-20);
+                    align-items: center;
+                    justify-content: space-between;
+                    p {
+                        font-size: var(--space-20);
+                    }
+                    a {
+                        @include call-to-action(var(--yellow-1), var(--blue-1));
+                        border: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+        &#links {
+            flex-direction: column;
+            div {
+                margin: var(--space-10) 0;
+                padding: var(--space-20);
+                flex-direction: column;
+                background-color: var(--dark);
+                height: 200px;
+                a {
+                    color: var(--white);
+                    text-transform: uppercase;
+                    font-size: var(--space-20);
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;
+                    img {
+                        height: var(--space-50);
+                        width: auto;
+                    }
+                    h2 {
+                        color: var(--white);
+                        font-size: calc(var(--space-20) + var(--space-5));
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        &#about {
+            margin-top: var(--space-50);
+            background-image: url('../../assets/webp/astro-mb.webp');
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            header, article, footer {
+                background-color: var(--white);
+                flex-direction: column;
+                padding: var(--space-20);
+                align-items: center;
+            }
+            header {
+                margin-top: 800px;
+                img {
+                    height: 130px;
+                    width: auto;
+                    justify-content: center;
+
+                }
+            }
+            article {
+                h2 {
+                    font-weight: bold;
+                    font-size: var(--space-30);
+                }
+                p {
+                    font-size: var(--space-20);
+                }
+            }
+            footer {
+                a {
+                    @include call-to-action(var(--yellow-1), var(--blue-1));
+                    border: none;
+                    font-weight: bold;
+                }
+            }
+        }
+        &#map {
+            flex-direction: column;
+            margin-bottom: var(--space-50);
+            header {
+                padding: var(--space-20);
+            }
+            .map {
+                height: 100vh;
+                background-image: url('../../assets/webp/mapa.webp');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                justify-content: center;
+                align-items: center;
+                a {
+                    background-color: rgba(0,0,0,.5);
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--white);
+                    font-size: var(--space-20);
+                    display: none;
+                }
+                &:hover {
+                    a {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (min-width: 992px) {
+    #index {
+        section {
+            &#top {
+                min-height: calc(100vh - 40px);
+                position: relative;
+                margin: 0;
+                > div {
+                    margin-bottom: 250px;
+                    width: 645px;
+                    h1 {
+                        font-size: calc(var(--space-20) + var(--space-10) + var(--space-5));
+                    }
+                }
+            }
+            &#services {
+                max-width: 1920px;
+                align-self: center;
+                header {
+                    justify-content: center;
+                }
+                article {
+                    flex-direction: row;
+                    .services-box {
+                        margin: var(--space-10);
+                        height: 550px;
+                        border-radius: var(--space-5);
+                        box-shadow: 2px 2px var(--space-5) rgb(0 0 0 / 0.2);
+                        a {
+                            picture {
+                                border-radius: var(--space-5) var(--space-5) 0 0;
+                            }
+                        }
+                        p {
+                            padding: var(--space-10);
+                        }
+                        &:first-child {
+                            margin-top: 10px;
+                        }
+                    }
+                }   
+            }
+            &#consulting {
+                article {
+                    flex-direction: row;
+                    picture {
+                        flex: 1;
+                    }
+                    div {
+                        flex: 1;
+                        justify-content: space-between;
+                        p {
+                            margin: var(--space-20);
+                            font-size: calc(var(--space-20) + 10px);
+                        }
+                    }
+                }
+            }
+            &#links {
+                flex-direction: row;
+                margin: var(--space-20) 0;
+                justify-content: space-between;
+                div {
+                    max-width: 1920px;
+                    align-self: center;
+                    width: 100%;
+                    margin: 0 var(--space-20);
+                    transition: 0.5s;
+                    a {
+                        width: 100%;
+                        justify-content: space-between;
+                        height: 250px;
+                        h2 {
+                            text-align: center;
+                        }
+                    }
+                    &:hover {
+                        background-color: var(--dark-2);
+                    }
+                }
+            }
+            &#about {
+                background-image: url('../../assets/webp/astro.webp');
+            }
+        }
+    }
+}
+//Settings for first background image responsives
+@media (min-width: 640px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-mbr.webp");
+            }
+        }
+    }
+}
+@media (min-width: 990px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-1280.webp");
+            }
+        }
+    }
+}
+@media (min-width: 1920px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-1920.webp");
+            }
+        }
+    }
+}
+@media (min-width: 2000px) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-_4k.webp");
+            }
+        }
+    }
+}
