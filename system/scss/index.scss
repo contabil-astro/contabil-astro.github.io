@@ -1,5 +1,27 @@
 #index {
     section {
+        .wrap {
+            background-color: inherit;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            a {
+                justify-content: center;
+                margin: var(--space-50);
+                img {
+                    height: calc(var(--space-20) * 2);
+                    width: auto;
+                    margin-right: var(--space-10);
+                }
+                h2 {
+                    text-transform: uppercase;
+                    font-size: calc(var(--space-50) - var(--space-10));
+                    font-weight: bold;
+                }
+            }
+        }
         &#top {
             background-image: url("../../assets/webp/background-mb.webp");
             background-size: cover;
@@ -29,25 +51,6 @@
         }
         &#services {
             flex-direction: column;
-            .wrap {
-                background-color: inherit;
-                flex-direction: row;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: var(--space-50);
-                img {
-                    height: calc(var(--space-20) * 2);
-                    width: auto;
-                    margin-right: var(--space-10);
-                }
-                h2 {
-                    text-transform: uppercase;
-                    font-size: 40px;
-                    font-weight: bold;
-                }
-            }
             article {
                 flex-direction: column;
                 .services-box {
@@ -86,6 +89,66 @@
                             @include call-to-action;
                         }
                     }
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+                
+            }
+        }
+        &#consulting {
+            flex-direction: column;
+            article {
+                flex-direction: column;
+                picture {
+                    img {
+                        width: 100%;
+                    }
+                }
+                div {
+                    flex-direction: column;
+                    padding: var(--space-20);
+                    align-items: center;
+                    justify-content: space-between;
+                    p {
+                        font-size: var(--space-20);
+                    }
+                    a {
+                        @include call-to-action;
+                        background-color: var(--yellow-1);
+                        border: none;
+                        color: var(--blue-1);
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+        &#links {
+            flex-direction: column;
+            div {
+                margin: var(--space-10) 0;
+                padding: var(--space-20);
+                flex-direction: column;
+                background-color: var(--dark);
+                height: 200px;
+                a {
+                    color: var(--white);
+                    text-transform: uppercase;
+                    font-size: var(--space-20);
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;
+                    img {
+                        height: var(--space-50);
+                        width: auto;
+                    }
+                    h4 {
+                        color: var(--white);
+                        font-size: var(--space-30);
+                        text-transform: capitalize;
+                    }
                 }
             }
         }
@@ -107,17 +170,70 @@
                 }
             }
             &#services {
+                max-width: 1920px;
+                align-self: center;
                 header {
                     justify-content: center;
-                    margin-bottom: var(--space-50);
                 }
                 article {
                     flex-direction: row;
                     .services-box {
-                        margin: 10px;
+                        margin: var(--space-10);
+                        height: 550px;
+                        border-radius: var(--space-5);
+                        box-shadow: 2px 2px var(--space-5) rgb(0 0 0 / 0.2);
+                        a {
+                            picture {
+                                border-radius: var(--space-5) var(--space-5) 0 0;
+                            }
+                        }
+                        p {
+                            padding: var(--space-10);
+                        }
+                        &:first-child {
+                            margin-top: 10px;
+                        }
+                    }
+                }   
+            }
+            &#consulting {
+                article {
+                    flex-direction: row;
+                    picture {
+                        flex: 1;
+                    }
+                    div {
+                        flex: 1;
+                        justify-content: space-between;
+                        p {
+                            margin: var(--space-20);
+                            font-size: calc(var(--space-20) + 10px);
+                        }
                     }
                 }
-                
+            }
+            &#links {
+                flex-direction: row;
+                margin: var(--space-20) 0;
+                justify-content: space-between;
+                div {
+                    max-width: 1920px;
+                    align-self: center;
+                    width: 100%;
+                    margin: 0 var(--space-20);
+                    transition: 0.5s;
+                    a {
+                        width: 100%;
+                        justify-content: space-between;
+                        height: 250px;
+                        h4 {
+                            text-align: center;
+                        }
+                    }
+                    &:hover {
+                        background-color: var(--dark-2);
+                    }
+                }
             }
         }
     }
