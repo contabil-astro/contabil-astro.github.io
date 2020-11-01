@@ -206,7 +206,7 @@
         }
     }
 }
-@mixin call-to-action($background, $color) {
+@mixin call-to-action($background, $color, $hover:var(--red-3)) {
     width: 220px;
     height: 50px;
     text-decoration: none;
@@ -220,6 +220,6 @@
     font-size: 25px;
     transition: 0.3s;
     &:hover {
-        background-color: var(--red-3); 
+        background-color: $hover; 
     }
 }
