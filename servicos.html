@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66">
-    <title>Astro Escritório Fisco Contábil</title>
+    <title>Serviços - Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -44,125 +44,128 @@
             </ul>
         </nav>
     </header>
+    
+    <main id="services">
 
-    <main id="index">
-        <section id="top">
-            <div>
-                <h1>Você cuida do seu&nbsp;<span>negócio.</span><br>Nós cuidamos da sua&nbsp;<span>empresa.</span></h1>
-            </div>
-        </section>
-        
-        <section id="services">
+        <section>
             <header>
                 <div class="wrap">
                     <img width="0" height="0" loading="lazy" src="assets/svg/services.svg" alt="Nossos serviços" />
-                    <h2>serviços</h2>
+                    <h1>serviços</h1>
                 </div>
             </header>
             <article>
-                <div class="services-box">
-                    <a href="servicos.html">
-                    <picture>
-                        <source srcset="assets/webp/irpf.webp" type="image/webp" />
-                        <img width="0" height="0" loading="lazy" src="assets/jpg/irpf.jpg" alt="Declaração de Imposto de Renda" />
-                    </picture>
-                    </a>
-                    <h3>declaração de irpf</h3>
-                    <p>Fazemos sua declaração de Imposto de Renda da Pessoa Física</p>
-                    <a class="cta" href="servicos.html">saiba mais</a>
-                </div>
-                <div class="services-box">
-                    <a href="servicos.html">
-                    <picture>
-                        <source srcset="assets/webp/cnpj.webp" type="image/webp" />
-                        <img width="0" height="0" loading="lazy" src="assets/jpg/cnpj.jpg" alt="Abertura e fechamento de empresas" />
-                    </picture>
-                    </a>
-                    <h3>abra sua empresa</h3>
-                    <p>Abrimos sua empresa e gerenciamos seu CNPJ</p>
-                    <a class="cta" href="servicos.html">saiba mais</a>
-                </div>
-                <div class="services-box">
-                    <a href="servicos.html" cla>
-                    <picture>
-                        <source srcset="assets/webp/rh.webp" type="image/webp" />
-                        <img width="0" height="0" loading="lazy" src="assets/jpg/rh.jpg" alt="Recursos humanos" />
-                    </picture>
-                    </a>
-                    <h3>recursos humanos</h3>
-                    <p>Cuidamos de sua folha de pagamentos, documentos e impostos</p>
-                    <a class="cta" href="servicos.html">saiba mais</a>
-                </div>
+                <p>Oferecemos uma extensa lista de serviços para você pessoa física ou pessoa jurídica.</p>
+                <p>Nossos profissionais são treinados e qualificados para auxiliar você.</p>
             </article>
         </section>
-
-        <section id="consulting">
-            <header>
-                <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/consultoria.svg" alt="Consultoria" />
-                    <h2>Consultoria</h2>
+        <section id="services-search">
+            <form action="servicos.html">
+                <div class="field">
+                    <div class="innerField">
+                        <input type="search" name="search" id="search" placeholder="Busque um serviço" />
+                        <button type="submit" aria-label="Faça sua busca">
+                            <img src="assets/svg/lupa.svg" alt="Faça sua busca" />
+                        </button>
+                    </div>
                 </div>
-            </header>
-            <article>
+            </form>
+        </section>
+        <section id="services-list">
+            <div class="services-box">
+                <a href="agendamento.html">
                 <picture>
-                    <source media="(min-width: 1280px)" srcset="assets/webp/consultoria-1280.webp" type="image/webp" />
-                    <source media="(min-width: 1920px)" srcset="assets/webp/consultoria-1920.webp" type="image/webp" />
-                    <img width="0" height="0" loading="lazy" src="assets/jpg/consultoria-1920.jpg" alt="Consultoria Contábil" />
+                    <source srcset="assets/webp/rh.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/rh.jpg" alt="Recursos Humanos" />
                 </picture>
-                <div>
-                    <p>Fornecemos consultoria para pessoas físicas e jurídicas mediante a agendamento.<br><br>Conte com nossos profissionais para tirar todas as suas dúvidas e encontrar as soluções ideais.</p>
-                    <a class="cta" href="consultoria.html">agendar</a>
-                </div>
-            </article>
+                </a>
+                <h2>recursos humanos</h2>
+                <p>Cuidamos de sua folha de pagamentos, registros de funcionários, contribuições com o INSS e FGTS. </p>
+                <p>Agende um atendimento e vamos fornecer todas as orientações que a sua empresa precisar.</p>
+                <p class="value">Valor: <span>R$49,90</span></p>
+                <small>Valor cobrado por funcionário</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/irpf.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/irpf.jpg" alt="Declaração de Imposto de Renda" />
+                </picture>
+                </a>
+                <h2>declaração de irpf</h2>
+                <p>Fazemos sua declaração de Imposto de Renda da Pessoa Física</p>
+                <p>Agende um atendimento e leve todos os documentos necessários, como notas fiscais e extratos bancários.</p>
+                <p class="value">Valor: <span>R$99,90</span></p>
+                <small>Valor cobrado por CPF declarado</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/cnpj.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/cnpj.jpg" alt="Abra a sua empresa" />
+                </picture>
+                </a>
+                <h2>abra sua empresa</h2>
+                <p>Executamos a abertura, gerenciamento e fechamento de CNPJ. Também emitimos seus boletos do DAS.</p>
+                <p>Serviço feito mediante agendamento.</p>
+                <p class="value">Valor: <span>R$199,90</span></p>
+                <small>Valor cobrado por CNPJ</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/notafiscal.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/notafiscal.jpg" alt="Notas Fiscais" />
+                </picture>
+                </a>
+                <h2>revisão de nota fiscal</h2>
+                <p>Emitimos e retificamos suas notas fiscais de entrada e saída.</p>
+                <p>Faça seu agendamento e conte com a gente para simplificar sua situação fiscal</p>
+                <p class="value">Valor: <span>variável</span></p>
+                <small>O valor pode variar de acordo com a situação</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="contato.html">
+                <picture>
+                    <source srcset="assets/webp/impostos.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/impostos.jpg" alt="Declaração de Imposto de Renda" />
+                </picture>
+                </a>
+                <h2>serviços contábeis</h2>
+                <p>Apuramos seus impostos federais e analisamos possíveis pendências em seus documentos.</p>
+                <p>Entre em contato informando seu CPF ou CNPJ e nossa equipe retornará com as informações.</p>
+                <p class="value">Valor: <span>variável</span></p>
+                <small>Valor pode variar em cada situação</small>
+                <a class="cta" href="contato.html"><img src="assets/svg/email-azul.svg" alt="Entre em contato">contato</a>
+            </div>
+
+            <div class="services-box">
+                <a href="contato.html">
+                <picture>
+                    <source srcset="assets/webp/certificado.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/certificado.jpg" alt="Certificado digital" />
+                </picture>
+                </a>
+                <h2>certificado digital</h2>
+                <p>Compre conosco seu Certificado Digital e-CNPJ ou e-CPF e tenha mais segurança ao assinar digitalmente seus documentos.</p>
+                <p>Entre em contato e solicite uma cotação.</p>
+                <p class="value">Valor: <span>a partir de R$199,90</span></p>
+                <small>Valor pode variar em cada situação</small>
+                <a class="cta" href="contato.html"><img src="assets/svg/email-azul.svg" alt="Entre em contato">contato</a>
+            </div>
+
+            
         </section>
 
-        <section id="links">
-            <div>
-                <a href="#!">
-                <img width="0" height="0" loading="lazy" src="assets/svg/documentos.svg" alt="Modelos de Documentos" />
-                <h2>Modelos de Documentos</h2>
-                acessar</a>
-            </div>
-            <div>
-                <a href="#!">
-                <img width="0" height="0" loading="lazy" src="assets/svg/negativas.svg" alt="Certidões Negativas" />
-                <h2>Certidões Negativas</h2>
-                acessar</a>
-            </div>                
-            <div>
-                <a href="#!">
-                <img width="0" height="0" loading="lazy" src="assets/svg/calendario.svg" alt="Agenda Tributária" />
-                <h2>Agenda Tributária</h2>
-                acessar</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <header>
-                <img width="0" height="0" loading="lazy" src="assets/png/logo.png" alt="Astro Contabilidade" />
-            </header>
-            <article>
-                <h2>Astro Escritorio Fisco Contábil Ltda tem a experiência para ajudá-lo a crescer!</h2>
-                <p>Você pode confiar que o seu negócio e assuntos pessoais serão tratados com profissionalismo, integridade e a máxima discrição. O resultado final será preciso, dentro do prazo e você obterá grandes resultados.</p>
-            </article>
-            <footer>
-                <a href="contato.html" class="cta">contato</a>
-            </footer>
-        </section>
-
-        <section id="map">
-            <header>
-                <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/pointer.svg" alt="Nossa localização" />
-                    <h2>estamos aqui</h2>
-                </div>
-            </header>
-            <div class="map">
-                <a href="https://www.google.com/maps/place/R.+Maestro+Artur+Giambeli+-+Jardim+Santa+Cecilia,+Limeira+-+SP/@-22.5665993,-47.4146443,21z/data=!4m5!3m4!1s0x94c8805eed5c77e5:0x44dea5ab48facfca!8m2!3d-22.5692319!4d-47.4142143">Veja como chegar até nós</a>
-            </div>
-        </section>
     </main>
-    
 
     <footer>
         <div>

@@ -206,20 +206,151 @@
         }
     }
 }
-@mixin call-to-action($background, $color) {
+@mixin call-to-action($background, $color, $borderColor:var(--dark-1), $hover:var(--red-3)) {
     width: 220px;
     height: 50px;
     text-decoration: none;
     text-transform: uppercase;
     background-color: $background;
     border-radius: calc(var(--space-20) + var(--space-5));
-    border: 1px solid var(--red-2);
+    border: 1px solid $borderColor;
     justify-content: center;
     align-items: center;
     color: $color;
     font-size: 25px;
     transition: 0.3s;
     &:hover {
-        background-color: var(--red-3); 
+        background-color: $hover; 
+    }
+}
+@mixin heading-title {
+    header {
+        .wrap {
+            background-color: inherit;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: var(--space-50) 0;
+            img {
+                height: calc(var(--space-20) * 2);
+                width: auto;
+                margin-right: var(--space-10);
+            }
+            h2, h1 {
+                text-transform: uppercase;
+                font-size: calc(var(--space-50) - var(--space-10));
+                font-weight: bold;
+            }
+        }
+    }
+}
+@mixin field {
+    .field {
+        flex-direction: column;
+        border: 1px solid var(--blue-1);
+        border-radius: var(--space-5);
+        padding: var(--space-10);
+        width: 100%;
+        margin: var(--space-10) 0;
+        label {
+            color: var(--green-1);
+            font-size: var(--space-20);
+            text-transform: uppercase;
+            margin-bottom: var(--space-5);
+        }
+        .innerField {
+            flex-direction: row;
+            input, button {
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+            input {
+                width: 100%;
+                height: var(--space-30);
+                font-size: var(--space-20);
+                font-weight: 100;
+            }
+            select {
+                width: 100%;
+                height: var(--space-30);
+                border: none;
+                font-size: var(--space-20);
+                font-weight: 100;
+                outline: none;
+            }
+            textarea {
+                width: 100%;
+                height: 100px;
+                border: none;
+                font-size: var(--space-20);
+                outline: none;
+            }
+        }
+    }
+}
+@mixin services-box($height:450px) {
+
+        flex-direction: column;
+        max-width: 992px;
+        background-color: var(--white-1);
+        width: 100%;
+        margin: var(--space-20) 0;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: var(--space-20);
+        height: $height;
+        h3,h2 {
+            text-transform: uppercase;
+            font-size: 30px;
+            margin: 0;
+        }
+        p {
+            font-size: var(--space-20);
+            margin:0;
+            text-align: center;
+        }
+        a {
+            picture {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transition: 0.3s;
+                    width: 100%;
+                    height: 100%;
+                    &:hover {
+                        transform: scale(1.1);
+                        opacity: 0.9;
+                    }
+                }
+            }
+            &.cta {
+                @include call-to-action(var(--red-1), var(--white));
+            }
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+
+    @media (min-width: 992px) {
+        
+            margin: var(--space-10);
+            height: 550px;
+            border-radius: var(--space-5);
+            box-shadow: 2px 2px var(--space-5) rgb(0 0 0 / 0.2);
+            a {
+                picture {
+                    border-radius: var(--space-5) var(--space-5) 0 0;
+                }
+            }
+            p {
+                padding: var(--space-10);
+            }
+            &:first-child {
+                margin-top: 10px;
+            }
+        
     }
 }

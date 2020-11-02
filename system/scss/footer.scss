@@ -1,3 +1,13 @@
 footer {
     @include footer;
+    li {
+        &::marker {
+            color: white;
+        }
+    }
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

@@ -1,0 +1,108 @@
+#about {
+    margin-top: calc(var(--space-100) + var(--space-20));
+    hr {
+        width: 50%;
+        border: 5px solid var(--blue-1);
+        margin-bottom: var(--space-50);
+    }
+    section {
+        flex-direction: column;
+        &#briefing {
+            header {
+               align-items: center;
+                h1 {
+                    font-weight: bold;
+                    font-size: var(--space-40);
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+            article {
+                flex-direction: column;
+                padding: var(--space-20);
+            }
+            footer {
+                background-image: url('../../assets/webp/astro-mb.webp');
+                min-height: 100vh;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                flex-direction: column;
+            }
+        }
+        &#team {
+            header {
+                margin: var(--space-40) 0;
+                align-self: center;
+                h2 {
+                    margin: 0;
+                    font-size: var(--space-20);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+            article {
+                flex-direction: column;
+                .team {
+                    flex-direction: column;
+                    picture {
+                        flex: 1;
+                        justify-content: center;
+                        align-content: center;
+                        img, source {
+                            max-height: 360px;
+                            width: auto;
+                        }
+                    }
+                    div {
+                        flex: 1;
+                        flex-direction: column;
+                        padding: var(--space-40);
+                        align-items: center;
+                        h3 {
+                            font-weight: bold;
+                        }
+                        p {
+                            line-height: var(--space-30);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media (min-width: 992px) {
+    #about {
+        margin: var(--space-20) 0;
+        section {
+            &#briefing {
+                header {
+                    justify-content: center;
+                }
+                article {
+                    align-items: center;
+                }
+                footer {
+                    background-image: url('../../assets/webp/astro.webp');
+                }
+            }
+            &#team {
+                article {
+                    align-items: center;
+                    .team {
+                        &:nth-child(odd) {
+                            flex-direction: row;
+                        }
+                        &:nth-child(even) {
+                            flex-direction: row-reverse;
+                        }              
+                        max-width: 992px;
+                    }
+                       
+                }
+            }
+        }
+    }
+}

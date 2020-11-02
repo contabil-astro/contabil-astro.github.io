@@ -1,0 +1,92 @@
+#services {
+    margin-top: 68px;
+    section {
+        flex-direction: column;
+        padding: var(--space-20);
+        @include heading-title;
+        article {
+            flex-direction: column;
+            p {
+                font-size: var(--space-20);
+                margin: var(--space-5) 0;
+            }
+        }
+        &#services-search {
+            @include field;
+        }
+        &#services-list {
+            .services-box {
+                @include services-box(700px);
+                a {
+                    &.cta {
+                        @include call-to-action(var(--yellow-1), var(--blue-1), var(--blue-1), var(--orange-1));
+                        img {
+                            height: var(--space-30);
+                            width: auto;
+                            margin-right: var(--space-10);
+                        }
+                        &:hover {
+                            color: var(--white);
+                        }
+                    }
+                }
+                p {
+                    &.value {
+                        font-size: var(--space-30);
+                        span {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (min-width: 992px) {
+    #services {
+        margin-top: 0;
+        section {
+            article {
+                align-self: center;
+            }
+            &#services-search {
+                width: calc(var(--space-100) * 5);
+                align-self: center;
+                @include field;
+            }
+            &#services-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 50px;
+                margin-bottom: var(--space-50);
+                padding-right: 40px;
+                .services-box {
+                    height: max-content;
+                    min-height: 700px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1366px) {
+    #services {
+        section {
+            &#services-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-50);
+            }
+        }
+    }
+}
+@media (min-width: 1520px) {
+    #services {
+        section {
+            &#services-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}

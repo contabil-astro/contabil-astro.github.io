@@ -1,0 +1,83 @@
+#contact {
+    margin-top: 68px;
+    section {
+        @include heading-title;
+        flex-direction: column;
+        padding: var(--space-20);
+        article {
+            flex-direction: column;
+            p {
+                font-size: var(--space-20);
+                margin: var(--space-5) 0;
+            }
+            .cta {
+                align-self: center;
+                margin: var(--space-10) 0;
+                @include call-to-action(var(--yellow-1), var(--blue-1), var(--dark-1), var(--orange-1));
+                &:hover {
+                    color: var(--white);
+                }
+            }
+        }
+        &#form {
+            form {
+                flex-direction: column;
+                @include field;
+                .fields {
+                    flex-direction: column;
+                    
+                }
+                img {
+                    width: 320px;
+                    height: auto;
+                    align-self: center;
+                }
+                button {
+                    background-color: var(--blue-1);
+                    border-radius: var(--space-5);
+                    border: 1px solid var(--blue-1);
+                    color: var(--white);
+                    outline: none;
+                    border: none;
+                    height: 50px;
+                    width: 230px;
+                    align-self: center;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: var(--space-30);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: var(--space-10) 0;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: var(--blue-2);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    #contact {
+        margin: 0;
+        section {
+            article {
+                align-items: center;
+            }
+            &#form {
+                align-self: center;
+                width: 1000px;
+                form {
+                    .fields {
+                        flex-direction: row;
+                    }
+                    .field + .field {
+                        margin-left: var(--space-10);
+                    }
+                }
+            }
+        }
+        
+    }
+}

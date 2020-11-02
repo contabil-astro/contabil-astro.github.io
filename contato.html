@@ -45,7 +45,68 @@
         </nav>
     </header>
 
-    <main id="PAGEID">
+    <main id="contact">
+        <section>
+            <header>
+                <div class="wrap">
+                    <img width="0" height="0" loading="lazy" src="assets/svg/contact.svg" alt="Contato" />
+                    <h1>contato</h1>
+                </div>
+            </header>
+            <article>
+                <p>Entre em contato conosco para dúvidas sobre nossos serviços, sugestões e críticas.</p>
+                <p>Para agendamento de consultoria, acesse nossa página de agendamento.</p>
+                <a class="cta" href="agendamento.html">agendar</a>
+            </article>
+        </section>
+        <section id="form">
+            <form action="sucesso.html" action="GET">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">seu nome:</label>
+                        <div class="innerField">
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">seu e-mail:</label>
+                        <div class="innerField">
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <label for="tel">seu telefone:</label>
+                        <div class="innerField">
+                            <input type="tel" id="tel" name="tel" placeholder="Digite seu telefone" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="subject">assunto:</label>
+                        <div class="innerField">
+                            <select name="subject" id="subject">
+                                <option selected>Escolha o assunto</option>
+                                <option value="1">Serviços Contábeis</option>
+                                <option value="2">Compra de Certificado Digital</option>
+                                <option value="3">Dúvidas</option>
+                                <option value="4">Críticas</option>
+                                <option value="5">Sugestões</option>
+                                <option value="6">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="message">sua mensagem:</label>
+                    <div class="innerField">
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <img src="assets/jpg/google-captcha.jpg" alt="Google reCaptcha" />
+                <button type="submit">enviar</button>
+            </form>
+        </section>
 
     </main>
     
