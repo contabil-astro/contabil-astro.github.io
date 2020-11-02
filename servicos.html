@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atendimento fisco contábil com qualidade e eficiência em Limeira" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/system/etc/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/system/etc/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/system/etc/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/system/etc/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/system/etc/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/system/etc/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/system/etc/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/system/etc/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/system/etc/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="/system/etc/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/system/etc/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/system/etc/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/system/etc/favicon-16x16.png" />
+    <link rel="manifest" href="/system/etc/manifest.json" />
+    <link rel="preload" href="/system/css/stylesheet.css" as="style" />
+    <link rel="stylesheet" href="/system/css/stylesheet.css" />
+    <meta name="msapplication-TileColor" content="#004C66" />
+    <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#004C66">
+    <title>Serviços - Astro Escritório Fisco Contábil</title>
+</head>
+<body>
+    <header id="header">
+        <a href="index.html" aria-label="Página inicial">
+            <img src="assets/png/logo_site.png" alt="logo" />
+        </a>
+          
+        <button type="button" aria-label="Menu de Opções" id="menu-handler">
+            <img width="0" height="0" loading="lazy" src="assets/svg/menu-bars.svg" alt="Menu de Opções" />
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="servicos.html">serviços</a></li>
+                <li><a href="contato.html">contato</a></li>
+                <li><a href="sobre.html">sobre nós</a></li>
+                <li><a href="consultoria.html">agendar consultoria</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="services">
+
+        <section>
+            <header>
+                <div class="wrap">
+                    <img width="0" height="0" loading="lazy" src="assets/svg/services.svg" alt="Nossos serviços" />
+                    <h1>serviços</h1>
+                </div>
+            </header>
+            <article>
+                <p>Oferecemos uma extensa lista de serviços para você pessoa física ou pessoa jurídica.</p>
+                <p>Nossos profissionais são treinados e qualificados para auxiliar você.</p>
+            </article>
+        </section>
+        <section id="services-search">
+            <form action="servicos.html">
+                <div class="field">
+                    <div class="innerField">
+                        <input type="search" name="search" id="search" placeholder="Busque um serviço" />
+                        <button type="submit" aria-label="Faça sua busca">
+                            <img src="assets/svg/lupa.svg" alt="Faça sua busca" />
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="services-list">
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/rh.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/rh.jpg" alt="Recursos Humanos" />
+                </picture>
+                </a>
+                <h2>recursos humanos</h2>
+                <p>Cuidamos de sua folha de pagamentos, registros de funcionários, contribuições com o INSS e FGTS. </p>
+                <p>Agende um atendimento e vamos fornecer todas as orientações que a sua empresa precisar.</p>
+                <p class="value">Valor: <span>R$49,90</span></p>
+                <small>Valor cobrado por funcionário</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/irpf.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/irpf.jpg" alt="Declaração de Imposto de Renda" />
+                </picture>
+                </a>
+                <h2>declaração de irpf</h2>
+                <p>Fazemos sua declaração de Imposto de Renda da Pessoa Física</p>
+                <p>Agende um atendimento e leve todos os documentos necessários, como notas fiscais e extratos bancários.</p>
+                <p class="value">Valor: <span>R$99,90</span></p>
+                <small>Valor cobrado por CPF declarado</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/cnpj.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/cnpj.jpg" alt="Abra a sua empresa" />
+                </picture>
+                </a>
+                <h2>abra sua empresa</h2>
+                <p>Executamos a abertura, gerenciamento e fechamento de CNPJ. Também emitimos seus boletos do DAS.</p>
+                <p>Serviço feito mediante agendamento.</p>
+                <p class="value">Valor: <span>R$199,90</span></p>
+                <small>Valor cobrado por CNPJ</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="agendamento.html">
+                <picture>
+                    <source srcset="assets/webp/notafiscal.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/notafiscal.jpg" alt="Notas Fiscais" />
+                </picture>
+                </a>
+                <h2>revisão de nota fiscal</h2>
+                <p>Emitimos e retificamos suas notas fiscais de entrada e saída.</p>
+                <p>Faça seu agendamento e conte com a gente para simplificar sua situação fiscal</p>
+                <p class="value">Valor: <span>variável</span></p>
+                <small>O valor pode variar de acordo com a situação</small>
+                <a class="cta" href="agendamento.html"><img src="assets/svg/calendario-azul.svg" alt="Agende seu atendimento">agendar</a>
+            </div>
+
+            <div class="services-box">
+                <a href="contato.html">
+                <picture>
+                    <source srcset="assets/webp/impostos.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/impostos.jpg" alt="Declaração de Imposto de Renda" />
+                </picture>
+                </a>
+                <h2>serviços contábeis</h2>
+                <p>Apuramos seus impostos federais e analisamos possíveis pendências em seus documentos.</p>
+                <p>Entre em contato informando seu CPF ou CNPJ e nossa equipe retornará com as informações.</p>
+                <p class="value">Valor: <span>variável</span></p>
+                <small>Valor pode variar em cada situação</small>
+                <a class="cta" href="contato.html"><img src="assets/svg/email-azul.svg" alt="Entre em contato">contato</a>
+            </div>
+
+            <div class="services-box">
+                <a href="contato.html">
+                <picture>
+                    <source srcset="assets/webp/certificado.webp" type="image/webp" />
+                    <img width="0" height="0" loading="lazy" src="assets/jpg/certificado.jpg" alt="Certificado digital" />
+                </picture>
+                </a>
+                <h2>certificado digital</h2>
+                <p>Compre conosco seu Certificado Digital e-CNPJ ou e-CPF e tenha mais segurança ao assinar digitalmente seus documentos.</p>
+                <p>Entre em contato e solicite uma cotação.</p>
+                <p class="value">Valor: <span>a partir de R$199,90</span></p>
+                <small>Valor pode variar em cada situação</small>
+                <a class="cta" href="contato.html"><img src="assets/svg/email-azul.svg" alt="Entre em contato">contato</a>
+            </div>
+
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <section>
+                <h2>Astro Escritório Fisco Contábil</h2>
+                <p>Rua Dr. Antonio Frederico Ozanan, nº xxx</p>
+                <p>Vila São João</p>
+                <p>Limeira, São Paulo</p>
+                <div>
+                    <img width="0" height="0" loading="lazy" src="assets/svg/phone.svg" alt="Nosso telefone" />
+                    <a href="tel:+551934419229">(19) 3441-9229</a>
+                </div>
+                <div>
+                    <img width="0" height="0" loading="lazy" src="assets/svg/whatsapp.svg" alt="Nosso WhatsApp" />
+                    <a href="https://api.whatsapp.com/send?phone=55199999999999" target="_blank" rel="noreferrer">(19) 9.9999-0000</a>
+                </div>
+                <div>
+                    <img width="0" height="0" loading="lazy" src="assets/svg/email.svg" alt="Nosso e-mail" />
+                    <a href="mailto:contato@astro.com.br">contato@astro.com.br</a>
+                </div>
+            </section>
+            <section>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="servicos.html">serviços</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="sobre.html">sobre nós</a></li>
+                    <li><a href="consultoria.html">agendar consultoria</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#">receita federal</a></li>
+                    <li><a href="#">sefaz de são paulo</a></li>
+                    <li><a href="#">prefeitura municipal de limeira</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Siga-nos nas Redes Sociais</h2>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                        <img width="0" height="0" loading="lazy" src="assets/svg/facebook.svg" alt="Facebook"/>
+                        <p>facebook</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                        <img width="0" height="0" loading="lazy" src="assets/svg/linkedin.svg" alt="linkedin"/>
+                        <p>linkedin</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                        <img width="0" height="0" loading="lazy" src="assets/svg/twitter.svg" alt="twitter"/>
+                        <p>twitter</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+                        <img width="0" height="0" loading="lazy" src="assets/svg/instagram.svg" alt="instagram"/>
+                        <p>instagram</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section>
+            <p>© 2020 - Astro Escritório Fisco Contábil<br>Todos os direitos reservados</p>
+            <a href="https://www.griel.dev.br/l" target="_blank" rel="noreferrer">
+                Desenvolvido por Roberto Griel Filho
+                <img width="0" height="0" loading="lazy" src="assets/png/griel.png" alt="Desenvolvido por Griel" />
+            </a>
+        </section>
+
+    </footer>
+    <script src="system/javascript/openMenu.js" async></script>
+    
+</body>
+</html>

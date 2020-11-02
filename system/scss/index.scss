@@ -2,28 +2,7 @@
     section {
         margin: var(--space-10) 0;
         background-color: var(--white);
-        header {
-            .wrap {
-                background-color: inherit;
-                flex-direction: row;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                margin: var(--space-50) 0;
-                img {
-                    height: calc(var(--space-20) * 2);
-                    width: auto;
-                    margin-right: var(--space-10);
-                }
-                h2 {
-                    text-transform: uppercase;
-                    font-size: calc(var(--space-50) - var(--space-10));
-                    font-weight: bold;
-                }
-            }
-        }
-        
+        @include heading-title;
         &#top {
             background-image: url("../../assets/webp/background-mb.webp");
             background-size: cover;
@@ -57,47 +36,9 @@
             article {
                 flex-direction: column;
                 .services-box {
-                    flex-direction: column;
-                    max-width: 992px;
-                    background-color: var(--white-1);
-                    width: 100%;
-                    margin: var(--space-20) 0;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding-bottom: var(--space-20);
-                    height: 450px;
-                    h3 {
-                        text-transform: uppercase;
-                        font-size: 30px;
-                        margin: 0;
-                    }
-                    p {
-                        font-size: var(--space-20);
-                        margin:0;
-                        text-align: center;
-                    }
-                    a {
-                        picture {
-                            overflow: hidden;
-                            img {
-                                width: 100%;
-                                transition: 0.3s;
-                                width: 100%;
-                                height: 100%;
-                                &:hover {
-                                    transform: scale(1.1);
-                                    opacity: 0.9;
-                                }
-                            }
-                        }
-                        &.cta {
-                            @include call-to-action(var(--red-1), var(--white));
-                        }
-                    }
-                    &:first-child {
-                        margin-top: 0;
-                    }
+                    @include services-box;
                 }
+                
                 
             }
         }
@@ -255,22 +196,9 @@
                 article {
                     flex-direction: row;
                     .services-box {
-                        margin: var(--space-10);
-                        height: 550px;
-                        border-radius: var(--space-5);
-                        box-shadow: 2px 2px var(--space-5) rgb(0 0 0 / 0.2);
-                        a {
-                            picture {
-                                border-radius: var(--space-5) var(--space-5) 0 0;
-                            }
-                        }
-                        p {
-                            padding: var(--space-10);
-                        }
-                        &:first-child {
-                            margin-top: 10px;
-                        }
+                        @include services-box;
                     }
+                    
                 }   
             }
             &#consulting {
