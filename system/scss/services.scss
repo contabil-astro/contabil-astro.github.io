@@ -20,9 +20,6 @@
                 a {
                     &.cta {
                         @include call-to-action(var(--yellow-1), var(--blue-1), var(--blue-1), var(--orange-1));
-                        /*background-color: var(--yellow-1);
-                        color: var(--blue-1);
-                        border: 1px solid var(--blue-1);*/
                         img {
                             height: var(--space-30);
                             width: auto;
