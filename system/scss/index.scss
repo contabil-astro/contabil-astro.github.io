@@ -61,7 +61,7 @@
                         font-size: var(--space-20);
                     }
                     a {
-                        @include call-to-action(var(--yellow-1), var(--blue-1), var(--orange-1));
+                        @include call-to-action(var(--yellow-1), var(--blue-1), var(--dark-1), var(--orange-1));
                         border: none;
                         font-weight: bold;
                     }
@@ -132,7 +132,7 @@
             }
             footer {
                 a {
-                    @include call-to-action(var(--yellow-1), var(--blue-1), var(--orange-1));
+                    @include call-to-action(var(--yellow-1), var(--blue-1), var(--dark-1), var(--orange-1));
                     border: none;
                     font-weight: bold;
                 }
