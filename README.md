@@ -11,5 +11,4 @@
   <li>Agendamento de consultorias com os melhores contadores</li>
 </ul>
 
-<h3>To-do-list:</h3>
-[ ] Fazer o projeto no Figma
+
