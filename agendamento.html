@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66">
-    <title>Astro Escritório Fisco Contábil</title>
+    <title>Agendamento :: Escolha os Serviços - Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -45,7 +45,80 @@
         </nav>
     </header>
 
-    <main id="PAGEID">
+    <main id="schedules">
+		<section>
+			<header>
+                <div class="wrap">
+                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Agendamento" />
+                    <h1>agendamento</h1>
+                </div>
+			</header>
+			<article>
+				<p>Para oferecer o melhor atendimento a você e para se adequar as recentes normas de segurança e saúde, trabalhamos com consultas agendadas.</p>
+				<p>Para nosso primeiro atendimento, limitados o tempo máximo de uma hora por agendamento, e então nossa equipe analisará seu caso para um atendimento mais específico.</p>
+			</article>
+		</section>
+		<section id="services-options">
+			<header>
+				<h2>Escolha os serviços desejados</h2>
+			</header>
+			<form action="agendamento-dia.html" method="GET">
+				<article>
+					<label>
+                        <input type="radio" name="service" value="1" checked />
+                        <div class="square">
+                            <div></div>
+                        </div>
+                        <div class="content">
+                            <span class="name">Abertura de CNPJ</span>
+                        </div>
+					</label>
+					<label>
+                        <input type="radio" name="service" value="2" checked />
+                        <div class="square">
+                            <div></div>
+                        </div>
+                        <div class="content">
+                            <span class="name">Recursos Humanos</span>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="service" value="3" />
+                        <div class="square">
+                            <div></div>
+                        </div>
+                        <div class="content">
+                            <span class="name">Declaração de Imposto de Renda (Um CPF)</span>
+                        </div>
+					</label>
+					<label>
+                        <input type="radio" name="service" value="4" />
+                        <div class="square">
+                            <div></div>
+                        </div>
+                        <div class="content">
+                            <span class="name">Revisão de Notas Fiscais</span>
+                        </div>
+					</label>
+					<label>
+                        <input type="radio" name="service" value="5" />
+                        <div class="square">
+                            <div></div>
+                        </div>
+                        <div class="content">
+                            <span class="name">Serviços Contábeis</span>
+                        </div>
+                    </label>
+				</article>
+				<footer>
+					<a href="index.html" aria-label="Voltar">
+						<img src="assets/svg/voltar.svg" alt="Voltar" />
+						<span>Voltar</span>
+					</a>
+					<button type="submit">avançar</button>
+				</footer>
+			</form>
+		</section>
 
     </main>
     

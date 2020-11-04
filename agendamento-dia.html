@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66">
-    <title>Astro Escritório Fisco Contábil</title>
+    <title>Agendamento :: Escolha o Dia - Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -40,127 +40,100 @@
                 <li><a href="servicos.html">serviços</a></li>
                 <li><a href="contato.html">contato</a></li>
                 <li><a href="sobre.html">sobre nós</a></li>
-                <li><a href="agendamento.html">agendar consultoria</a></li>
+                <li><a href="consultoria.html">agendar consultoria</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="index">
-        <section id="top">
-            <div>
-                <h1>Você cuida do seu&nbsp;<span>negócio.</span><br>Nós cuidamos da sua&nbsp;<span>empresa.</span></h1>
-            </div>
-        </section>
+    <main id="schedules">
+		<section>
+			<header>
+                <div class="wrap">
+                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Agendamento" />
+                    <h1>agendamento</h1>
+                </div>
+			</header>
+			<article>
+				<p>Para oferecer o melhor atendimento a você e para se adequar as recentes normas de segurança e saúde, trabalhamos com consultas agendadas.</p>
+				<p>Para nosso primeiro atendimento, limitados o tempo máximo de uma hora por agendamento, e então nossa equipe analisará seu caso para um atendimento mais específico.</p>
+			</article>
+		</section>
+		<section id="services-day">
+			<header>
+				<h2>Escolha o melhor dia para você</h2>
+			</header>
+			<form action="agendamento-hora.html">
+				<article>
+					<div class="calendar">
+                        <div class="month">
+                            <button type="button" class="btn-today">Hoje</button>
+                            <h2>Novembro 2020</h2>
+                            <nav>
+                                <button type="button" class="btn-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.41" height="12" viewBox="0 0 7.41 12"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(16 18) rotate(180)" fill="#9a9a99"/></svg></button>
+                                <button type="button" class="btn-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.41" height="12" viewBox="0 0 7.41 12"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(-8.59 -6)" fill="#9a9a99"/></svg>
+                                </button>
+                            </nav>
+                        </div>
         
-        <section id="services">
-            <header>
-                <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/services.svg" alt="Nossos serviços" />
-                    <h2>serviços</h2>
-                </div>
-            </header>
-            <article>
-                <div class="services-box">
-                    <a href="servicos.html">
-                    <picture>
-                        <source srcset="assets/webp/irpf.webp" type="image/webp" />
-                        <img width="0" height="0" loading="lazy" src="assets/jpg/irpf.jpg" alt="Declaração de Imposto de Renda" />
-                    </picture>
-                    </a>
-                    <h3>declaração de irpf</h3>
-                    <p>Fazemos sua declaração de Imposto de Renda da Pessoa Física</p>
-                    <a class="cta" href="servicos.html">saiba mais</a>
-                </div>
-                <div class="services-box">
-                    <a href="servicos.html">
-                    <picture>
-                        <source srcset="assets/webp/cnpj.webp" type="image/webp" />
-                        <img width="0" height="0" loading="lazy" src="assets/jpg/cnpj.jpg" alt="Abertura e fechamento de empresas" />
-                    </picture>
-                    </a>
-                    <h3>abra sua empresa</h3>
-                    <p>Abrimos sua empresa e gerenciamos seu CNPJ</p>
-                    <a class="cta" href="servicos.html">saiba mais</a>
-                </div>
-                <div class="services-box">
-                    <a href="servicos.html" cla>
-                    <picture>
-                        <source srcset="assets/webp/rh.webp" type="image/webp" />
-                        <img width="0" height="0" loading="lazy" src="assets/jpg/rh.jpg" alt="Recursos humanos" />
-                    </picture>
-                    </a>
-                    <h3>recursos humanos</h3>
-                    <p>Cuidamos de sua folha de pagamentos, documentos e impostos</p>
-                    <a class="cta" href="servicos.html">saiba mais</a>
-                </div>
-            </article>
-        </section>
+                        <ul class="weekdays">
+                            <li>Dom</li>
+                            <li>Seg</li>
+                            <li>Ter</li>
+                            <li>Qua</li>
+                            <li>Qui</li>
+                            <li>Sex</li>
+                            <li>Sáb</li>
+                        </ul>
+                        <ul class="days">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li class="active">6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li class="selected">13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li class="month-next">01</li>
+                            <li class="month-next">02</li>
+                            <li class="month-next">03</li>
+                            <li class="month-next">04</li>
+                            <li class="month-next">05</li>
+                        </ul>
+				</article>
+				<footer>
+					<a href="agendamento.html" aria-label="Voltar">
+						<img src="assets/svg/voltar.svg" alt="Voltar" />
+						<span>Voltar</span>
+					</a>
+					<button type="submit">avançar</button>
+				</footer>
+			</form>
+		</section>
 
-        <section id="consulting">
-            <header>
-                <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/consultoria.svg" alt="Consultoria" />
-                    <h2>Consultoria</h2>
-                </div>
-            </header>
-            <article>
-                <picture>
-                    <source media="(min-width: 1280px)" srcset="assets/webp/consultoria-1280.webp" type="image/webp" />
-                    <source media="(min-width: 1920px)" srcset="assets/webp/consultoria-1920.webp" type="image/webp" />
-                    <img width="0" height="0" loading="lazy" src="assets/jpg/consultoria-1920.jpg" alt="Consultoria Contábil" />
-                </picture>
-                <div>
-                    <p>Fornecemos consultoria para pessoas físicas e jurídicas mediante a agendamento.<br><br>Conte com nossos profissionais para tirar todas as suas dúvidas e encontrar as soluções ideais.</p>
-                    <a class="cta" href="agendamento.html">agendar</a>
-                </div>
-            </article>
-        </section>
-
-        <section id="links">
-            <div>
-                <a href="#!">
-                <img width="0" height="0" loading="lazy" src="assets/svg/documentos.svg" alt="Modelos de Documentos" />
-                <h2>Modelos de Documentos</h2>
-                acessar</a>
-            </div>
-            <div>
-                <a href="#!">
-                <img width="0" height="0" loading="lazy" src="assets/svg/negativas.svg" alt="Certidões Negativas" />
-                <h2>Certidões Negativas</h2>
-                acessar</a>
-            </div>                
-            <div>
-                <a href="#!">
-                <img width="0" height="0" loading="lazy" src="assets/svg/calendario.svg" alt="Agenda Tributária" />
-                <h2>Agenda Tributária</h2>
-                acessar</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <header>
-                <img width="0" height="0" loading="lazy" src="assets/png/logo.png" alt="Astro Contabilidade" />
-            </header>
-            <article>
-                <h2>Astro Escritorio Fisco Contábil Ltda tem a experiência para ajudá-lo a crescer!</h2>
-                <p>Você pode confiar que o seu negócio e assuntos pessoais serão tratados com profissionalismo, integridade e a máxima discrição. O resultado final será preciso, dentro do prazo e você obterá grandes resultados.</p>
-            </article>
-            <footer>
-                <a href="contato.html" class="cta">contato</a>
-            </footer>
-        </section>
-
-        <section id="map">
-            <header>
-                <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/pointer.svg" alt="Nossa localização" />
-                    <h2>estamos aqui</h2>
-                </div>
-            </header>
-            <div class="map">
-                <a href="https://www.google.com/maps/place/R.+Maestro+Artur+Giambeli+-+Jardim+Santa+Cecilia,+Limeira+-+SP/@-22.5665993,-47.4146443,21z/data=!4m5!3m4!1s0x94c8805eed5c77e5:0x44dea5ab48facfca!8m2!3d-22.5692319!4d-47.4142143">Veja como chegar até nós</a>
-            </div>
-        </section>
     </main>
     
 
@@ -191,7 +164,7 @@
                     <li><a href="servicos.html">serviços</a></li>
                     <li><a href="contato.html">contato</a></li>
                     <li><a href="sobre.html">sobre nós</a></li>
-                    <li><a href="agendamento.html">agendar consultoria</a></li>
+                    <li><a href="consultoria.html">agendar consultoria</a></li>
                 </ul>
             </section>
             <section>

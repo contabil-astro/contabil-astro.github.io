@@ -1,0 +1,296 @@
+#schedules {
+    margin-top: 100px;
+    section {
+        flex-direction: column;
+        padding: var(--space-20);
+        @include heading-title;
+        header {
+            h2 {
+                text-transform: uppercase;
+                margin-bottom: var(--space-20);
+            }
+            .wrap {
+                h1 {
+                    font-size: var(--space-30);
+                }
+                margin: 0;
+            }
+        }
+        article {
+            flex-direction: column;
+        }
+        footer {
+            flex-direction: row;
+            height: var(--space-30);
+            background-color: unset;
+            margin-bottom: var(--space-20);
+            align-self: center;
+            a, button {
+                justify-content: center;
+                align-items: center;
+                margin: var(--space-10);
+                width: 50%;
+                height: 100%;
+                color: var(--white);
+                font-size: var(--space-20);
+                text-transform: uppercase;
+                padding: var(--space-20);
+                border-radius: var(--space-50);
+                cursor: pointer;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    outline: none;
+                }
+            }
+            a {
+                background-color: var(--red-1);
+                img {
+                    height: calc(var(--space-10) + var(--space-5));
+                    width: unset;
+                }
+                span {
+                    color: var(--white);
+                    font-weight: 100;
+                    margin-left: var(--space-10);
+                }
+                &:hover {
+                    text-decoration: none;
+                    background-color: var(--red-2);
+                }
+            }
+            button {
+                background-color: var(--green-1);
+                border: none;
+                &:hover {
+                    background-color: var(--green-0);
+                }
+            }
+        }
+        &#services-options {
+            header {
+                h2 {
+                    text-transform: uppercase;
+                }
+            }
+            form {
+                margin-top: var(--space-20);
+                flex-direction: column;
+                article {
+                    flex-direction: column;
+                    label {
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: var(--space-20);
+                        .square {
+                          width: 24px;
+                          height: 24px;
+                          border: 2px solid var(--blue-1);
+                          justify-content: center;
+                          align-items: center;
+                          border-radius: var(--space-20);
+                          > div {
+                            border-radius: var(--space-20);
+                            width: 14px;
+                            height: 14px;
+                            background-color: var(--dark);
+                            opacity: 0;
+                            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                          }
+                        }
+                        &:hover {
+                          .square {
+                            border: var(--dark) solid 2px;
+                            > div {
+                              opacity: 0.2;
+                            }
+                          }
+                        }
+                        .content {
+                            margin-left: var(--space-10);
+                        }
+                        input {
+                          display: none;
+                          &:checked + .square {
+                            > div {
+                              opacity: 1;
+                              background-color: var(--blue-1);
+                            }
+                          }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        &#services-day {
+            form {
+                flex-direction: column;
+                article {
+                    .calendar {
+                        flex-direction: column;
+                        padding: 0 var(--space-20);
+                        margin-bottom: var(--space-20);
+                        .month {
+                            justify-content: space-between;
+                            align-items: center;
+                            color: blue;
+                            margin-bottom: 10px;
+                            text-transform: uppercase;
+                            h2 {
+                                font-size: 22px;
+                                font-weight: 400;
+                            }
+                            nav {
+                                button {
+                                    min-width: 50px;
+                                    border: none;
+                                    border-radius: var(--space-50);
+                                    color: var(--dark);
+                                    height: var(--space-50);
+                                    justify-content: center;
+                                    align-items: center;
+                                    outline: none;
+                                    cursor: not-allowed;
+                                }
+                                button + button {
+                                    margin-left: 10px;
+                                }
+                            }
+                            .btn-today {
+                                display: none;
+                            }
+                        }
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .weekdays {
+                            color: var(--dark);
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            display: grid;
+                            grid-template-columns: repeat(7, 1fr);
+                            li {
+                                justify-content: center;
+                                padding: 8px 0;
+                                font-size: 12px;
+                                font-weight: bold;
+                            }
+                        }
+                        .days {
+                            display: grid;
+                            grid-template-columns: repeat(7, 1fr);
+                            grid-template-rows: repeat(5, 12vw);
+                            color: var(--dark-0);
+                            li {
+                                font-size: 16px;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                transition: all 0.1s ease-in-out;
+                                &:hover {
+                                    background-color: var(--dark-3);
+                                }
+                                &.active {
+                                    background-color: var(--blue-1);
+                                    color: var(--white);
+                                    &:hover {
+                                        background-color: var(--blue-1);
+                                    }
+                                    &:active {
+                                        background-color: var(--blue-2);
+                                    }
+                                }
+                                &.selected {
+                                    background-color: var(--green-1);
+                                    color: var(--white);
+                                    &:hover {
+                                        background-color: var(--green-1);
+                                    }
+                                    &:active {
+                                        background-color: var(--green-0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#services-time {
+            form {
+                flex-direction: column;
+                article {
+                    .options {
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                        label {
+                            width: calc(50% - var(--space-30));
+                            margin-bottom: var(--space-20);
+                            span {
+                                display: flex;
+                                width: 100%;
+                                background-color: var(--blue-1);
+                                color: var(--white);
+                                height: 50px;
+                                border-radius: var(--space-50);
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: var(--blue-2);
+                                }
+                            }
+                            input {
+                                display: none;
+                                &:checked + span {
+                                    background-color: var(--green-1);
+                                    &:hover {
+                                        background-color: var(--green-0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #schedules {
+        margin: 0;
+        max-width: 992px;
+        align-self: center;
+        section {
+            &#services-options {
+                form {
+                    margin: var(--space-20) 0;
+                    footer {
+                        width: 50%;
+                    }
+                }
+            }
+            &#services-day {
+                max-height: 992px;
+                form {
+                    article {
+                        .calendar {
+                            .days {
+                                grid-template-rows: repeat(5, 130px);
+                            }
+                        }
+                    }
+                    footer {
+                        width: 50%
+                    }
+                }
+            }
+        }
+    }
+}
