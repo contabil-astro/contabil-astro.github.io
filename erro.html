@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66">
-    <title>Sucesso! - Astro Escritório Fisco Contábil</title>
+    <title>Um erro ocorreu - Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -40,7 +40,7 @@
                 <li><a href="servicos.html">serviços</a></li>
                 <li><a href="contato.html">contato</a></li>
                 <li><a href="sobre.html">sobre nós</a></li>
-                <li><a href="consultoria.html">agendar consultoria</a></li>
+                <li><a href="agendamento.html">agendar consultoria</a></li>
             </ul>
         </nav>
     </header>
@@ -51,20 +51,20 @@
         </header>
         <article>
             <picture>
-                <source srcset="assets/webp/impostos.webp" type="image/webp" media="(min-width: 320px)" />
-                <source srcset="assets/webp/mapa.webp" type="image/webp" media="(min-width: 992px)" />
+                <source srcset="assets/svg/erro_desktop.svg" type="image/webp" media="(min-width: 992px)" />
+                <source srcset="assets/svg/erro_mobile.svg" type="image/webp" media="(min-width: 320px)" />
+                
                 <img width="0" height="0" loading="lazy" src="assets/svg/erro_mobile.svg" alt="Um erro ocorreu" />
             </picture>
             <div>
-                <p>Seus dados foram enviados com sucesso para a nossa equipe.</p>
-                <p>Nossa equipe poderá entrar em contato com você caso seja necessário solicitar informações adicionais.</p>
-                <p>Conte sempre com a Astro!</p>
+                <h2>Ops... Isso não está certo!</h2>
+                <p>A página que você tentou acessar não existe, ou pode ter sido um erro de digitação.</p>
+                <p>Mas tudo bem. Você pode <a href="index.html">voltar</a> para a página inicial ou enviar uma mensagem para a nossa equipe.</p>
             </div>
         </article>
         <footer>
-            <a href="index.html">
-                <img src="assets/svg/voltar.svg" alt="Voltar" />
-                voltar</a>
+            <a class="back" href="index.html"><img src="assets/svg/voltar.svg" alt="Voltar" /></a>
+            <a class="cta" href="contato.html">entrar em contato</a>
         </footer>
 
     </main>
