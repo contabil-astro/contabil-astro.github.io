@@ -82,6 +82,38 @@
                     }
                 }
             }
+            &#negative-links {
+                ul {
+                    grid-template-columns: repeat(2, 1fr);
+                    li {
+                        a {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #negatives {
+        section {
+            &#negative-links {
+                ul {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1900px) {
+    #negatives {
+        section {
+            &#negative-links {
+                ul {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
         }
     }
 }
