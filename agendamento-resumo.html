@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66">
-    <title>Agendamento :: Escolha o Dia - Astro Escritório Fisco Contábil</title>
+    <title>Agendamento :: Resumo - Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -49,83 +49,42 @@
 		<section>
 			<header>
                 <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Agendamento" />
-                    <h1>agendamento</h1>
+                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Resumo do agendamento" />
+                    <h1>resumo</h1>
                 </div>
 			</header>
 			<article>
-				<p>Para oferecer o melhor atendimento a você e para se adequar as recentes normas de segurança e saúde, trabalhamos com consultas agendadas.</p>
-				<p>Para nosso primeiro atendimento, limitados o tempo máximo de uma hora por agendamento, e então nossa equipe analisará seu caso para um atendimento mais específico.</p>
+                <p>Aqui está a sua seleção para o agendamento de sua consultoria.</p>
+                <p>Verifique o serviço escolhido, o dia e a hora marcada. Você pode voltar para alterar alguma opção ou finalizar seu agendamento.</p>
 			</article>
 		</section>
-		<section id="services-day">
+		<section id="services-sumary">
 			<header>
-				<h2>Escolha o melhor dia para você</h2>
+				<h2>Escolha os serviços desejados</h2>
 			</header>
-			<form action="agendamento-hora.html">
+			<form action="sucesso.html" method="GET">
 				<article>
-					<div class="calendar">
-                        <div class="month">
-                            <button type="button" class="btn-today">Hoje</button>
-                            <h2>Novembro 2020</h2>
-                            <nav>
-                                <button type="button" class="btn-prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.41" height="12" viewBox="0 0 7.41 12"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(16 18) rotate(180)" fill="#9a9a99"/></svg></button>
-                                <button type="button" class="btn-next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.41" height="12" viewBox="0 0 7.41 12"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(-8.59 -6)" fill="#9a9a99"/></svg>
-                                </button>
-                            </nav>
+                    <div class="field">
+                        <label for="service">serviço escolhido:</label>
+                        <div class="innerField">
+                            <input type="text" id="service" name="service" value="Abertura de CNPJ" readonly />
                         </div>
-        
-                        <ul class="weekdays">
-                            <li>Dom</li>
-                            <li>Seg</li>
-                            <li>Ter</li>
-                            <li>Qua</li>
-                            <li>Qui</li>
-                            <li>Sex</li>
-                            <li>Sáb</li>
-                        </ul>
-                        <ul class="days">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li class="active">6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li class="selected">13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
-                            <li>19</li>
-                            <li>20</li>
-                            <li>21</li>
-                            <li>22</li>
-                            <li>23</li>
-                            <li>24</li>
-                            <li>25</li>
-                            <li>26</li>
-                            <li>27</li>
-                            <li>28</li>
-                            <li>29</li>
-                            <li>30</li>
-                            <li class="month-next">01</li>
-                            <li class="month-next">02</li>
-                            <li class="month-next">03</li>
-                            <li class="month-next">04</li>
-                            <li class="month-next">05</li>
-                        </ul>
+                    </div>
+                    <div class="field">
+                        <label for="service-day">dia do atendimento:</label>
+                        <div class="innerField">
+                            <input type="text" id="service-day" name="service-day" value="13 de Novembro de 2020" readonly />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="service-time">horário do atendimento:</label>
+                        <div class="innerField">
+                            <input type="text" id="service-time" name="service-time" value="12:00" readonly />
+                        </div>
+                    </div>
 				</article>
 				<footer>
-					<a href="agendamento.html" aria-label="Voltar">
+					<a href="agendamento-hora.html" aria-label="Voltar">
 						<img src="assets/svg/voltar.svg" alt="Voltar" />
 						<span>Voltar</span>
 					</a>
