@@ -99,10 +99,10 @@
         }
         &#about {
             margin-top: var(--space-50);
-            background-image: url('../../assets/webp/astro-mb.webp');
+            background-image: url('../../assets/webp/astro-1920.webp');
             min-height: 100vh;
             background-attachment: fixed;
-            background-position: center;
+            background-position-x: -100px;
             background-repeat: no-repeat;
             background-size: cover;
             flex-direction: column;
@@ -165,6 +165,7 @@
                 &:hover {
                     a {
                         display: flex;
+                        backdrop-filter: blur(2px);
                     }
                 }
             }
@@ -241,7 +242,7 @@
                 }
             }
             &#about {
-                background-image: url('../../assets/webp/astro.webp');
+                background-position-x: unset;
             }
         }
     }

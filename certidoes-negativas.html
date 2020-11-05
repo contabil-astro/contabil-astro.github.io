@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Atendimento fisco contábil com qualidade e eficiência em Limeira" />
-    <link rel="apple-touch-icon" sizes="57x57" href="system/etc/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="system/etc/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="system/etc/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="system/etc/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="system/etc/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="system/etc/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="system/etc/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="system/etc/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="system/etc/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192"  href="system/etc/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="system/etc/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="system/etc/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="system/etc/favicon-16x16.png" />
-    <link rel="manifest" href="system/etc/manifest.json" />
-    <link rel="preload" href="system/css/stylesheet.css" as="style" />
-    <link rel="stylesheet" href="system/css/stylesheet.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/system/etc/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/system/etc/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/system/etc/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/system/etc/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/system/etc/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/system/etc/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/system/etc/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/system/etc/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/system/etc/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="/system/etc/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/system/etc/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/system/etc/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/system/etc/favicon-16x16.png" />
+    <link rel="manifest" href="/system/etc/manifest.json" />
+    <link rel="preload" href="/system/css/stylesheet.css" as="style" />
+    <link rel="stylesheet" href="/system/css/stylesheet.css" />
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66" />
@@ -33,7 +33,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
     <meta property="og:type" content="business.business" />
-    <title>Agendamento :: Escolha o Dia - Astro Escritório Fisco Contábil</title>
+    <title>Certidões Negativas :: Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -55,95 +55,54 @@
         </nav>
     </header>
 
-    <main id="schedules">
-		<section>
-			<header>
+    <main id="negatives">
+        <section>
+            <header>
                 <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Agendamento" />
-                    <h1>agendamento</h1>
+                    <img width="0" height="0" loading="lazy" src="assets/svg/certidoes.svg" alt="Certidões Negativa" />
+                    <h1>certidões negativas</h1>
                 </div>
-			</header>
-			<article>
-				<p>Para oferecer o melhor atendimento a você e para se adequar as recentes normas de segurança e saúde, trabalhamos com consultas agendadas.</p>
-				<p>Para nosso primeiro atendimento, limitados o tempo máximo de uma hora por agendamento, e então nossa equipe analisará seu caso para um atendimento mais específico.</p>
-			</article>
-		</section>
-		<section id="services-day">
-			<header>
-				<h2>Escolha o melhor dia para você</h2>
-			</header>
-			<form action="agendamento-hora.html">
-				<article>
-					<div class="calendar">
-                        <div class="month">
-                            <button type="button" class="btn-today">Hoje</button>
-                            <h2>Novembro 2020</h2>
-                            <nav>
-                                <button type="button" class="btn-prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.41" height="12" viewBox="0 0 7.41 12"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(16 18) rotate(180)" fill="#9a9a99"/></svg></button>
-                                <button type="button" class="btn-next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.41" height="12" viewBox="0 0 7.41 12"><path d="M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z" transform="translate(-8.59 -6)" fill="#9a9a99"/></svg>
-                                </button>
-                            </nav>
-                        </div>
-        
-                        <ul class="weekdays">
-                            <li>Dom</li>
-                            <li>Seg</li>
-                            <li>Ter</li>
-                            <li>Qua</li>
-                            <li>Qui</li>
-                            <li>Sex</li>
-                            <li>Sáb</li>
-                        </ul>
-                        <ul class="days">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li class="active">6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li class="selected">13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
-                            <li>19</li>
-                            <li>20</li>
-                            <li>21</li>
-                            <li>22</li>
-                            <li>23</li>
-                            <li>24</li>
-                            <li>25</li>
-                            <li>26</li>
-                            <li>27</li>
-                            <li>28</li>
-                            <li>29</li>
-                            <li>30</li>
-                            <li class="month-next">01</li>
-                            <li class="month-next">02</li>
-                            <li class="month-next">03</li>
-                            <li class="month-next">04</li>
-                            <li class="month-next">05</li>
-                        </ul>
-				</article>
-				<footer>
-					<a href="agendamento.html" aria-label="Voltar">
-						<img src="assets/svg/voltar.svg" alt="Voltar" />
-						<span>Voltar</span>
-					</a>
-					<button type="submit">avançar</button>
-				</footer>
-			</form>
-		</section>
-
+            </header>
+            <article>
+                <p>Com sua Certidão Negativa você pode confirmar a inexistência de débitos como Pessoa Física ou Pessoa Jurídica.</p>
+                <div class="tip">
+                    <div>
+                        <img src="assets/svg/lampada.svg" alt="Dica" />
+                    </div>
+                    <div>
+                        <p>Qualquer órgão do governo pode emitir a Certidão Negativa de Débitos (CND). O documento confirma não haver pendências financeiras ou processuais em nome da Pessoa Jurídica ou Física, também serve para bem.</p>
+                        <p>Normalmente, as certidões negativas são requeridas em processos de licitação, de concorrência, de cadastro ou homologações perante a fornecedores, bancos e empréstimos. No processo de aquisição de uma empresa, são solicitadas todas as certidões e dos seus sócios.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <hr />
+        <section id="negative-links">
+            <h2>Link para Emissões:</h2>
+            <ul>
+                <li>
+                    <a href="https://www.trt12.jus.br/certidao/f/t/emitircertidao" target="_blank"  rel="noreferrer">Certidão Negativa de Ações Trabalhistas</a>
+                </li>
+                <li>
+                    <a href="http://www.tst.jus.br/certidao" target="_blank"  rel="noreferrer">Certidão Negativa Justiça do Trabalho</a>
+                </li>
+                <li>
+                    <a href="https://www2.trf4.jus.br/trf4/processos/certidao/index.php" target="_blank"  rel="noreferrer">Certidão Negativa Justiça Federal</a>
+                </li>
+                <li>
+                    <a href="https://servicos.receita.fazenda.gov.br/Servicos/certidao/CNDConjuntaInter/InformaNICertidao.asp?tipo=1" target="_blank"  rel="noreferrer">Certidão Negativa Receita Federal do Brasil - Pessoa Juridica</a>
+                </li>
+                <li>
+                    <a href="http://servicos.receita.fazenda.gov.br/Servicos/certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2" target="_blank"  rel="noreferrer">Certidão Negativa Receita Federal do Brasil - Pessoa Fisíca</a>
+                </li>
+                <li>
+                    <a href="https://cnd.dataprev.gov.br/cws/contexto/cnd/cnd.html" target="_blank"  rel="noreferrer">Certidão Negativa de CEI</a>
+                </li>
+                <li>
+                    <a href="https://www.institucional.jucesp.sp.gov.br/" target="_blank"  rel="noreferrer">Junta Comercial de São Paulo</a>
+                </li>
+            </ul>
+        </section>
     </main>
     
 

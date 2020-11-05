@@ -22,9 +22,11 @@
                 padding: var(--space-20);
             }
             footer {
-                background-image: url('../../assets/webp/astro-mb.webp');
+                background-image: url('../../assets/webp/astro-1920.webp');
                 min-height: 100vh;
+                background-color: unset;
                 background-attachment: fixed;
+                background-position-x: -100px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -85,7 +87,7 @@
                     align-items: center;
                 }
                 footer {
-                    background-image: url('../../assets/webp/astro.webp');
+                    background-position-x: unset;
                 }
             }
             &#team {
