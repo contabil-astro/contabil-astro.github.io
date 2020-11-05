@@ -1,0 +1,87 @@
+#negatives {
+    margin-top: 100px;
+    hr {
+        width: 50%;
+        border: 5px solid var(--blue-1);
+    }
+    section {
+        flex-direction: column;
+        padding: var(--space-20);
+        @include heading-title;
+        header {
+            .wrap {
+                h1 {
+                    font-size: var(--space-30);
+                }
+            }
+            
+        }
+        article {
+            flex-direction: column;
+            .tip {
+                flex-direction: row;
+                div {
+                    flex-direction: column;
+                    img {
+                        height: var(--space-100);
+                        width: auto;
+                        margin: var(--space-20);
+                        margin-left: 0;
+                    }
+                    p {
+                        font-weight: 100;
+                    }
+                } 
+            }
+        }
+        &#negative-links {
+            flex-direction: column;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: var(--space-30);
+                margin: 0;
+                margin-top: var(--space-20);
+                padding: 0;
+                li, a {
+                    
+                    width: 100%;
+                }
+                li {
+                    height: var(--space-50);
+                    background-color: var(--gray-1);
+                    border: 1px solid var(--dark-3);
+                    a {
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.5s;
+                        &:hover {
+                            background-color: var(--gray-2);
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    #negatives {
+        margin: 0;
+        section {
+            article {
+                align-items: center;
+                .tip {
+                    div {
+                        img {
+                            height: 150px;
+                            width: auto;
+                            margin: 0;
+                            margin-right: var(--space-20);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
