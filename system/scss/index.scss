@@ -248,20 +248,35 @@
     }
 }
 //Settings for first background image responsives
-@media (min-width: 640px) {
+@media (min-width: 375px) and (orientation: landscape) {
     #index {
         section {
             &#top {
-                background-image: url("../../assets/webp/background-mbr.webp");
+                background-image: url("../../assets/webp/background-1280.webp");
+                background-position-y: var(--space-10);
+                background-position-x: 0;
             }
         }
     }
 }
+@media (min-width: 375px) and (orientation: portrait) {
+    #index {
+        section {
+            &#top {
+                background-image: url("../../assets/webp/background-mb.webp");
+                background-position-y:0;
+                background-position-x: 0;
+            }
+        }
+    }
+}
+
 @media (min-width: 990px) {
     #index {
         section {
             &#top {
                 background-image: url("../../assets/webp/background-1280.webp");
+                background-position-y: 0;
             }
         }
     }
@@ -271,6 +286,7 @@
         section {
             &#top {
                 background-image: url("../../assets/webp/background-1920.webp");
+                background-position-y: -70px;
             }
         }
     }
@@ -280,6 +296,7 @@
         section {
             &#top {
                 background-image: url("../../assets/webp/background-_4k.webp");
+                background-position-y: -85px;
             }
         }
     }
