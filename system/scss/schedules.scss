@@ -259,6 +259,16 @@
                 }
             }
         }
+        &#services-sumary {
+            form {
+                flex-direction: column;
+                article {
+                    
+                    @include field;
+                }
+                
+            }
+        }
     }
 }
 
@@ -288,6 +298,19 @@
                     }
                     footer {
                         width: 50%
+                    }
+                }
+            }
+            &#services-sumary {
+                form {
+                    article {
+                        align-self: center;
+                        flex-direction: row;
+                        width: 70vw;
+                        max-width: 952px;
+                        .field {
+                            margin: var(--space-10);
+                        }
                     }
                 }
             }

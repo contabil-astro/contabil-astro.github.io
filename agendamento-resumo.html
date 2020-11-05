@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#004C66" />
     <meta name="msapplication-TileImage" content="/system/etc/ms-icon-144x144.png" />
     <meta name="theme-color" content="#004C66">
-    <title>Agendamento :: Escolha o Dia - Astro Escritório Fisco Contábil</title>
+    <title>Agendamento :: Resumo - Astro Escritório Fisco Contábil</title>
 </head>
 <body>
     <header id="header">
@@ -49,66 +49,42 @@
 		<section>
 			<header>
                 <div class="wrap">
-                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Agendamento" />
-                    <h1>agendamento</h1>
+                    <img width="0" height="0" loading="lazy" src="assets/svg/calendar.svg" alt="Resumo do agendamento" />
+                    <h1>resumo</h1>
                 </div>
 			</header>
 			<article>
-				<p>Para oferecer o melhor atendimento a você e para se adequar as recentes normas de segurança e saúde, trabalhamos com consultas agendadas.</p>
-				<p>Para nosso primeiro atendimento, limitados o tempo máximo de uma hora por agendamento, e então nossa equipe analisará seu caso para um atendimento mais específico.</p>
+                <p>Aqui está a sua seleção para o agendamento de sua consultoria.</p>
+                <p>Verifique o serviço escolhido, o dia e a hora marcada. Você pode voltar para alterar alguma opção ou finalizar seu agendamento.</p>
 			</article>
 		</section>
-		<section id="services-time">
+		<section id="services-sumary">
 			<header>
-				<h2>Escolha o melhor horário para você</h2>
+				<h2>Escolha os serviços desejados</h2>
 			</header>
-			<form action="agendamento-resumo.html">
+			<form action="sucesso.html" method="GET">
 				<article>
-					<div class="options">
-                        <label>
-                            <input type="radio" name="option" value="9:00" />
-                            <span>9:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="10:00" />
-                            <span>10:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="11:00" />
-                            <span>11:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="12:00" checked />
-                            <span>12:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="13:00" />
-                            <span>13:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="14:00" />
-                            <span>14:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="15:00" />
-                            <span>15:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="16:00" />
-                            <span>16:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="17:00" />
-                            <span>17:00</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="18:00" />
-                            <span>18:00</span>
-                        </label>
+                    <div class="field">
+                        <label for="service">serviço escolhido:</label>
+                        <div class="innerField">
+                            <input type="text" id="service" name="service" value="Abertura de CNPJ" readonly />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="service-day">dia do atendimento:</label>
+                        <div class="innerField">
+                            <input type="text" id="service-day" name="service-day" value="13 de Novembro de 2020" readonly />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="service-time">horário do atendimento:</label>
+                        <div class="innerField">
+                            <input type="text" id="service-time" name="service-time" value="12:00" readonly />
+                        </div>
                     </div>
 				</article>
 				<footer>
-					<a href="agendamento-dia.html" aria-label="Voltar">
+					<a href="agendamento-hora.html" aria-label="Voltar">
 						<img src="assets/svg/voltar.svg" alt="Voltar" />
 						<span>Voltar</span>
 					</a>
