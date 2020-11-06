@@ -292,7 +292,6 @@
     }
 }
 @mixin services-box($height:450px) {
-
         flex-direction: column;
         max-width: 992px;
         background-color: var(--white-1);
@@ -302,6 +301,8 @@
         justify-content: space-between;
         padding-bottom: var(--space-20);
         height: $height;
+        border-radius: var(--space-5);
+        box-shadow: 2px 2px var(--space-5) rgb(0 0 0 / 0.2);
         h3,h2 {
             text-transform: uppercase;
             font-size: 30px;
@@ -315,6 +316,7 @@
         a {
             picture {
                 overflow: hidden;
+                border-radius: var(--space-5) var(--space-5) 0 0;
                 img {
                     width: 100%;
                     transition: 0.3s;
@@ -335,22 +337,13 @@
         }
 
     @media (min-width: 992px) {
-        
-            margin: var(--space-10);
-            height: 550px;
-            border-radius: var(--space-5);
-            box-shadow: 2px 2px var(--space-5) rgb(0 0 0 / 0.2);
-            a {
-                picture {
-                    border-radius: var(--space-5) var(--space-5) 0 0;
-                }
-            }
-            p {
-                padding: var(--space-10);
-            }
-            &:first-child {
-                margin-top: 10px;
-            }
-        
+        margin: var(--space-10);
+        height: 550px;
+        p {
+            padding: var(--space-10);
+        }
+        &:first-child {
+            margin-top: 10px;
+        }
     }
 }

@@ -55,6 +55,7 @@
                         img, source {
                             max-height: 360px;
                             width: auto;
+                            border-radius: var(--space-50);
                         }
                     }
                     div {
@@ -101,6 +102,11 @@
                             flex-direction: row-reverse;
                         }              
                         max-width: 992px;
+                        margin: var(--space-5) 0;
+                        padding: var(--space-20) 0;
+                    }
+                    .team + .team {
+                        border-top: 1px dashed var(--blue-1);
                     }
                        
                 }
