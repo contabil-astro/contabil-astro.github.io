@@ -293,13 +293,10 @@
 }
 @mixin services-box($height:450px) {
         flex-direction: column;
-        
         background-color: var(--white-1);
         width: 100%;
-
         max-width: 600px;
         align-self: center;
-
         margin: var(--space-20) 0;
         align-items: center;
         justify-content: space-between;
